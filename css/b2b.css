@@ -606,3 +606,22 @@ footer .footer__particulares {
   font-size: 13px;
   margin: 0;
 }
+
+/* Bloque final de contacto */
+.btn-b2b--lg,
+a.btn-b2b--lg:link,
+a.btn-b2b--lg:visited {
+  font-size: 18px;
+  padding: 14px 32px;
+  min-height: 56px;
+}
+.b2b-section .b2b-contacto-alt {
+  text-align: center;
+  color: #c9d8e6;
+  margin-top: 20px;
+}
+.b2b-contacto-alt a:link,
+.b2b-contacto-alt a:visited {
+  color: var(--dm-white);
+  text-decoration: underline;
+}
