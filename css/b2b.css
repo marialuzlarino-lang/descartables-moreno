@@ -17,11 +17,45 @@ body {
   color: var(--dm-ink);
 }
 
-/* Navegación */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope.ttf") format("truetype");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+/* Navegación y marca (logo: cruz y caja, Manrope) */
+.navbar {
+  background: #12324a;
+}
+.bg-dark.scrolled,
+.fixed-top-text {
+  background: #12324a !important;
+}
+@media (max-width: 991px) {
+  .bg-dark,
+  .bg-dark.scrolled {
+    background: #12324a !important;
+  }
+}
+.header__logo {
+  width: 40px;
+  height: 40px;
+}
+.header__nombre,
+footer .footer__nombre {
+  font-family: "Manrope", "Open Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
 .header__nombre {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
   align-self: center;
+}
+.b2b-section h2,
+.hero__title {
+  font-family: "Manrope", "Open Sans", sans-serif;
+  letter-spacing: -0.01em;
 }
 .fixed-top-text {
   font-size: 12px;
