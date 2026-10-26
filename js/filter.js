@@ -100,11 +100,15 @@ function filtrarPorCategoria(categoria, products) {
       // Cambiar el comportamiento de las columnas en pantallas pequeñas (col-6)
       productCard.classList.add("col-6", "col-sm-6", "col-md-4", "col-lg-3", "card-container");
   
+      const mensaje = encodeURIComponent(
+        `Hola, vengo de la web de Descartables Moreno. Quiero cotizar: ${product.title}. Institución: `
+      );
       productCard.innerHTML = `
         <div class="card text-center product m-2 m-md-3 rounded square-card">
-          <img class="img-fluid d-block mx-auto img-fixed" src="${product.image}" alt="${product.title}" />
-          <div class="card-body p-2">
+          <img class="img-fluid d-block mx-auto img-fixed" src="${product.image}" alt="${product.title}" loading="lazy" />
+          <div class="card-body p-2 d-flex flex-column">
             <h5 class="lead text-dark">${product.title}</h5>
+            <a class="btn-cotizar-producto mt-auto" href="https://wa.me/5491122375172?text=${mensaje}" target="_blank" rel="noopener" data-origen="catalogo">Cotizar por mayor</a>
           </div>
         </div>
       `;
