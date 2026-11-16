@@ -108,7 +108,7 @@ function filtrarPorCategoria(categoria, products) {
           <img class="img-fluid d-block mx-auto img-fixed" src="${product.image}" alt="${product.title}" loading="lazy" />
           <div class="card-body p-2 d-flex flex-column">
             <h5 class="lead text-dark">${product.title}</h5>
-            <a class="btn-cotizar-producto mt-auto" href="https://wa.me/5491122375172?text=${mensaje}" target="_blank" rel="noopener" data-origen="catalogo">Cotizar por mayor</a>
+            <a class="btn-cotizar-producto mt-auto" href="https://wa.me/5491154894792?text=${mensaje}" target="_blank" rel="noopener" data-origen="catalogo">Cotizar por mayor</a>
           </div>
         </div>
       `;
